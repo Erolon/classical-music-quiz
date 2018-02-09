@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    let questions_easy = [
+    const questions_easy = [
         { text: "How many ballades did Chopin compose?", options: ['3', '4', '5', '6'], answer: '4' },
         { text: "How many piano concertos did Chopin compose?", options: ['1', '2', '3', '4'], answer: '2' },
         { text: "What was the first name of Robert Schumann’s wife?", options: ['Clara', 'Jane', 'Marianne', 'Elisabeth'], answer: 'Clara' },
@@ -9,7 +9,7 @@ $(document).ready(function() {
         { text: "Which country was Sibelius from?", options: ['Finland', 'Sweden', 'Estonia', 'Russia'], answer: 'Finland' },
     ]
 
-    let questions_medium = [
+    const questions_medium = [
         { text: "What key signature is Mozart’s 40th symphony in? ", options: ['C minor', 'D major', 'B♭ major', 'G minor'], answer: 'G minor' },
         { text: "Which piano sonata by Beethoven is commonly known as the Waldstein?", options: ['Sonata No. 23', 'Sonata No. 5', 'Sonata No. 21', 'Sonata No. 31'], answer: 'Sonata No. 21' },
         { text: 'Which symphony by Mendelssohn has been given the nickname “Italian”?', options: ['1', '4', '10', '17'], answer: '4' },
@@ -18,7 +18,7 @@ $(document).ready(function() {
         { text: "Which country was Henri Vieuxtemps from?", options: ['Belgium', 'France', 'Luxembourg', 'Austria'], answer: 'Belgium' },
     ]
 
-    let questions_hard = [
+    const questions_hard = [
         { text: "Who is Rachmaninoff’s 4th Piano Concerto dedicated to?", options: ['Nikolai Medtner', 'Alexander Scriabin', 'Pyotr Ilyich Tchaikovsky', 'Mikhail Glinka'], answer: 'Nikolai Medtner' },
         { text: "What was Liszt’s first composition to be published?", options: ['Variations on a Waltz by Diabelli', 'Sonata in B minor', 'Nuages gris', 'Der Papsthymnus'], answer: 'Variations on a Waltz by Diabelli' },
         { text: "How many songs did Liszt compose in English?", options: ['0', '1', '2', '3'], answer: '1' },
@@ -29,7 +29,7 @@ $(document).ready(function() {
         { text: "Which composer is the 'the Silence of Järvenpää' related to?", options: ['Jean Sibelius', 'Heino Kaski', 'Edward Grieg', 'Arvo Pärt'], answer: 'Jean Sibelius' },        
     ]
 
-    let questions_very_hard = [
+    const questions_very_hard = [
         { text: "Which famous composer attempted suicide by throwing themselves into the Rhine river in 1854?", options: ['Schubert', 'Liszt', 'Paganini', 'Schumann'], answer: 'Schumann' },
         { text: "How old was Mendelssohn when he started taking piano lessons?", options: ['2', '4', '6', '8'], answer: '6' },
         { text: "What did Robert Schumann study before he began to study composition?", options: ['Law', 'Medicine', 'Philosophy', 'German literature'], answer: 'Law' },
@@ -40,14 +40,14 @@ $(document).ready(function() {
         { text: "Which composer was not part of the 'Société des Apaches'?", options: ['Max Bruch', 'Maurice Ravel', 'Igor Stravinsky', 'Manuel de Falla'], answer: 'Max Bruch' },
     ]
 
-    let answering_time = 15000; // 15 seconds
+    const answering_time = 15000; // 15 seconds
     var score;
 
     $('#back_button').click(function () {
         window.location.href='index.html';
     });
 
-    let difficulty = localStorage.getItem("difficulty");
+    const difficulty = localStorage.getItem("difficulty");
     var questions;
 
     if (difficulty == "Easy") {
