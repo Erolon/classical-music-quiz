@@ -1,0 +1,36 @@
+.wrapper {
+    font-family: 'Satisfy', cursive;    
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.title_wrapper {
+    margin-bottom: 7vh;
+    line-height: 90%;    
+    font-size: 12vh;
+}
+
+.footer {
+    font-family: 'Indie Flower', cursive;
+    position: fixed; 
+    text-align: center;   
+    bottom: 1vh;
+    width: 100%;
+    font-size: 2vh;
+}
+
+
+.button_text {
+    font-size: 3vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    height: 6vh;
+    width: 12vw;
+}

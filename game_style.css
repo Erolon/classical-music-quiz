@@ -1,0 +1,66 @@
+.header {
+    font-family: 'Satisfy', cursive;
+    position: fixed; 
+    top: 2vh;
+    left: 3vh;
+    width: 100%;
+    font-size: 2vh;    
+}
+
+.wrapper {
+    font-family: 'Satisfy', cursive;    
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.difficulty_wrapper {
+    margin-top: -2vh;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+.button_wrapper {
+    margin-top: 15px;
+    font-family: 'Indie Flower', cursive;    
+}
+
+.progress_bar {
+    margin-top: 15px;
+}
+
+.button {
+    min-height: 6vh;
+    min-width: 12vh;
+    margin: 7px;
+}
+
+.button_text {
+    font-size: 4vh;
+}
+
+.question_wrapper {
+    font-size: 12vh;
+    line-height: 50%;
+    margin-bottom: 6vh;
+}
+
+#subtitle {
+    font-size: 6vh;
+    white-space: pre-wrap;
+}
+
+.footer {
+    font-family: 'Indie Flower', cursive;
+    position: fixed; 
+    text-align: center;   
+    bottom: 1vh;
+    width: 100%;
+    font-size: 2vh;
+}
